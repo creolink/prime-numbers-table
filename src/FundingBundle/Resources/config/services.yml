@@ -1,0 +1,43 @@
+services:
+    funding.next_prime_number.factory:
+        class: FundingBundle\Factory\NextPrimeNumberFactory
+        arguments:
+            - "@funding.prime_number_validation.service"
+
+    funding.next_prime_number.service:
+        class: FundingBundle\Service\AbstractNextPrimeNumberService
+        factory: 'funding.next_prime_number.factory:createNextPrimeNumberService'
+
+    funding.prime_number_validation.service:
+        class: FundingBundle\Service\PrimeNumberValidationService
+
+    funding.prime_numbers_service.factory:
+        class: FundingBundle\Factory\PrimeNumbersServiceFactory
+        arguments:
+            - "@funding.last_prime_numbers.service"
+            - "@funding.quantity_prime_numbers.service"
+
+    funding.last_prime_numbers.service:
+        class: FundingBundle\Service\LastPrimeNumbersService
+        arguments:
+            - "@funding.next_prime_number.service"
+            - "@funding.prime_number_validation.service"
+
+    funding.quantity_prime_numbers.service:
+        class: FundingBundle\Service\QuantityPrimeNumbersService
+        arguments:
+            - "@funding.next_prime_number.service"
+            - "@funding.prime_number_validation.service"
+
+    funding.prime_numbers_table.presenter:
+        class: FundingBundle\Presenter\NumbersTablePresenter
+        arguments:
+            - '@funding.prime_numbers_calculator'
+
+    funding.prime_numbers_list.presenter:
+        class: FundingBundle\Presenter\NumbersListPresenter
+        arguments:
+            - '@funding.prime_numbers_calculator'
+
+    funding.prime_numbers_calculator:
+        class: FundingBundle\Calculator\Multiplication

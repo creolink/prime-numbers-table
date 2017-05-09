@@ -1,0 +1,25 @@
+default:
+    autoload:
+        - %paths.base%/src/
+
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                default:
+                    goutte: ~
+
+    formatters:
+        pretty: true
+
+    suites:
+        application:
+            paths:
+                - '%paths.base%/app/behat/features'
+
+            contexts:
+                - Knp\FriendlyContexts\Context\MinkContext
+                - FundingBundle\Test\Behat\PrimeTableContext
+
+            extensions:
+                Behatch\Extension: ~
+
