@@ -86,6 +86,18 @@ class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTab
             return false;
         }
 
+        if ($options->getLast() > self::MAX_VALUE) {
+            return false;
+        }
+
+        if ($options->getStart() > self::MAX_VALUE) {
+            return false;
+        }
+
+        if ($options->getQuantity() > self::MAX_VALUE) {
+            return false;
+        }
+
         return true;
     }
 
@@ -98,15 +110,15 @@ class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTab
         $entity = new PMCommandOption();
 
         $entity->setQuantity(
-            $input->getOption(self::QUANTITY_OPTION)
+            intval($input->getOption(self::QUANTITY_OPTION))
         );
 
         $entity->setLast(
-            $input->getOption(self::LAST_OPTION)
+            intval($input->getOption(self::LAST_OPTION))
         );
 
         $entity->setStart(
-            $input->getArgument(self::START_ARGUMENT)
+            intval($input->getArgument(self::START_ARGUMENT))
         );
 
         return $entity;
@@ -119,9 +131,12 @@ class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTab
     {
         $output->writeln(
             sprintf(
-                '<error>Please fill one of options "%s" or "%s". Please use --help for more info.</error>',
+                '<error>Please fill one of options "%s" or "%s". '
+                    .'Use only integer values no bigger than %s. '
+                    .'Please use --help for more info.</error>',
                 self::QUANTITY_OPTION,
-                self::LAST_OPTION
+                self::LAST_OPTION,
+                self::MAX_VALUE
             )
         );
     }
