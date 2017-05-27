@@ -71,6 +71,12 @@ PHPUnit:
 make phpunit
 ```
 
+Tests:
+```
+make test
+```
+
+
 Behat:
 ```
 make behat
