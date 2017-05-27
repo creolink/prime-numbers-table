@@ -66,16 +66,15 @@ Please use '--help' for more informations.
 
 # Tests / Code style #
 
-PHPUnit:
-```
-make phpunit
-```
-
 Tests:
 ```
 make test
 ```
 
+PHPUnit:
+```
+make phpunit
+```
 
 Behat:
 ```
