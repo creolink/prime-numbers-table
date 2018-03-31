@@ -1,10 +1,10 @@
 <?php
 
-namespace FundingBundle\Service;
+namespace AppBundle\Service;
 
-use FundingBundle\Entity\CommandOptionsInterface;
-use FundingBundle\Service\AbstractNextPrimeNumberService as NextPrimeNumber;
-use FundingBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
+use AppBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\AbstractNextPrimeNumberService as NextPrimeNumber;
+use AppBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
 
 abstract class AbstractPrimeNumbersService
 {

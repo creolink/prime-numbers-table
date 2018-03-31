@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Calculator;
+namespace AppBundle\Calculator;
 
-use FundingBundle\Calculator\CalculatorInterface;
+use AppBundle\Calculator\CalculatorInterface;
 
 class Multiplication implements CalculatorInterface
 {

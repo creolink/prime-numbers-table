@@ -1,12 +1,12 @@
 <?php
 
-namespace FundingBundle\Test;
+namespace AppBundle\Test;
 
-use FundingBundle\Entity\PMCommandOption;
-use FundingBundle\Entity\CommandOptionsInterface;
-use FundingBundle\Service\PrimeNumberValidationService;
-use FundingBundle\Factory\NextPrimeNumberFactory;
-use FundingBundle\Service\AbstractNextPrimeNumberService;
+use AppBundle\Entity\PMCommandOption;
+use AppBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\PrimeNumberValidationService;
+use AppBundle\Factory\NextPrimeNumberFactory;
+use AppBundle\Service\AbstractNextPrimeNumberService;
 
 trait TestCaseTrait
 {

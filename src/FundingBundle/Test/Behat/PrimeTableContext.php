@@ -1,9 +1,9 @@
 <?php
 
-namespace FundingBundle\Test\Behat;
+namespace AppBundle\Test\Behat;
 
-use FundingBundle\Test\Behat\AbstractTestCase;
-use FundingBundle\Entity\CommandOptionsInterface;
+use AppBundle\Test\Behat\AbstractTestCase;
+use AppBundle\Entity\CommandOptionsInterface;
 
 class PrimeTableContext extends AbstractTestCase
 {

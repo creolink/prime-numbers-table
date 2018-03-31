@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Service;
+namespace AppBundle\Service;
 
 class PrimeNumberValidationService
 {

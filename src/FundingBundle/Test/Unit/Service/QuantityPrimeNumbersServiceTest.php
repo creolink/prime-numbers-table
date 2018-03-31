@@ -1,11 +1,10 @@
 <?php
 
-namespace FundingBundle\Test\Unit\Service;
+namespace AppBundle\Test\Unit\Service;
 
-use FundingBundle\Service\QuantityPrimeNumbersService;
-use FundingBundle\Service\AbstractNextPrimeNumberService;
-use FundingBundle\Test\Unit\Service\AbstractTestCase;
-use FundingBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\QuantityPrimeNumbersService;
+use AppBundle\Service\AbstractNextPrimeNumberService;
+use AppBundle\Entity\CommandOptionsInterface;
 use \Mockery as m;
 
 class QuantityPrimeNumbersServiceTest extends AbstractTestCase
@@ -77,7 +76,7 @@ class QuantityPrimeNumbersServiceTest extends AbstractTestCase
      */
     private function mockNextPrimeNumberService(): AbstractNextPrimeNumberService
     {
-        $mock = m::mock('FundingBundle\Service\AbstractNextPrimeNumberService');
+        $mock = m::mock('AppBundle\Service\AbstractNextPrimeNumberService');
 
         foreach ($this->primeNumbers as $number => $result) {
             $mock->shouldReceive('getNumber')

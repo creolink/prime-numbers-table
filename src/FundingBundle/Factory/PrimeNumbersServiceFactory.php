@@ -1,11 +1,11 @@
 <?php
 
-namespace FundingBundle\Factory;
+namespace AppBundle\Factory;
 
-use FundingBundle\Entity\CommandOptionsInterface;
-use FundingBundle\Service\QuantityPrimeNumbersService as QuantityNumbersService;
-use FundingBundle\Service\LastPrimeNumbersService as LastNumbersService;
-use FundingBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
+use AppBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\QuantityPrimeNumbersService as QuantityNumbersService;
+use AppBundle\Service\LastPrimeNumbersService as LastNumbersService;
+use AppBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
 
 class PrimeNumbersServiceFactory
 {

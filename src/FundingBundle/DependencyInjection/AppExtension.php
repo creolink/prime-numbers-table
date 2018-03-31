@@ -1,16 +1,16 @@
 <?php
 
-namespace FundingBundle\DependencyInjection;
+namespace AppBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
-use FundingBundle\Exception\NoPresenterException;
+use AppBundle\Exception\NoPresenterException;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\Definition;
 
-class FundingExtension extends Extension
+class AppExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -35,7 +35,7 @@ class FundingExtension extends Extension
      */
     private function configurePrimeNumbersPresenter(array $config, ContainerBuilder $container)
     {
-        $service = sprintf('funding.prime_numbers_%s.presenter', $config['prime_numbers_presenter']);
+        $service = sprintf('app.prime_numbers_%s.presenter', $config['prime_numbers_presenter']);
 
         if (!$container->hasDefinition($service)) {
             throw new NoPresenterException(
@@ -48,9 +48,9 @@ class FundingExtension extends Extension
 
         $definition = new Definition(
             new Reference($service),
-            [new Reference('funding.prime_numbers_calculator')]
+            [new Reference('app.prime_numbers_calculator')]
         );
 
-        $container->setDefinition('funding.prime_numbers.presenter', $definition);
+        $container->setDefinition('app.prime_numbers.presenter', $definition);
     }
 }

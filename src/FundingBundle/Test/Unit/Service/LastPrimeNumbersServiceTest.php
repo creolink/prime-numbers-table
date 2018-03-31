@@ -1,10 +1,10 @@
 <?php
 
-namespace FundingBundle\Test\Unit\Service;
+namespace AppBundle\Test\Unit\Service;
 
-use FundingBundle\Service\LastPrimeNumbersService;
-use FundingBundle\Test\Unit\Service\AbstractTestCase;
-use FundingBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\LastPrimeNumbersService;
+use AppBundle\Test\Unit\Service\AbstractTestCase;
+use AppBundle\Entity\CommandOptionsInterface;
 
 class LastPrimeNumbersServiceTest extends AbstractTestCase
 {

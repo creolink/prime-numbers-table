@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Presenter;
+namespace AppBundle\Presenter;
 
-use FundingBundle\Calculator\CalculatorInterface;
+use AppBundle\Calculator\CalculatorInterface;
 
 abstract class AbstractNumbersPresenter
 {

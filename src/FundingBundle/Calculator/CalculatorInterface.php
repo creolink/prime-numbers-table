@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Calculator;
+namespace AppBundle\Calculator;
 
 interface CalculatorInterface
 {

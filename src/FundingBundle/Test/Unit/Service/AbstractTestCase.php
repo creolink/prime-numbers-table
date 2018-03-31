@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Test\Unit\Service;
+namespace AppBundle\Test\Unit\Service;
 
-use FundingBundle\Test\TestCaseTrait;
+use AppBundle\Test\TestCaseTrait;
 
 abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
 {

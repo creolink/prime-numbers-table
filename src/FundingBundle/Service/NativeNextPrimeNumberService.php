@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Service;
+namespace AppBundle\Service;
 
-use FundingBundle\Service\AbstractNextPrimeNumberService;
+use AppBundle\Service\AbstractNextPrimeNumberService;
 
 class NativeNextPrimeNumberService extends AbstractNextPrimeNumberService
 {

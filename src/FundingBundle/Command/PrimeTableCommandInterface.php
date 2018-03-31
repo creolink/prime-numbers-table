@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Command;
+namespace AppBundle\Command;
 
 interface PrimeTableCommandInterface
 {
@@ -11,5 +11,5 @@ interface PrimeTableCommandInterface
 
     const MAX_VALUE = 500;
 
-    const COMMAND_NAME = 'funding:prime-table';
+    const COMMAND_NAME = 'app:prime-table';
 }

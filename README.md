@@ -23,7 +23,7 @@ The first row and column of the table should have the 10 primes, with each cell 
 By default you need 'php-gmp' / 'php7.0-gmp' extension, but you can disable this in composer.json file.
 This library works also without this extension.
 
-Please look at: FundingBundle\Factory\NextPrimeNumberFactory
+Please look at: AppBundle\Factory\NextPrimeNumberFactory
 
 --------------
 
@@ -38,7 +38,7 @@ Possible values ***'table'*** or ***'list'***.
 
 #Usage#
 
-```php bin/console funding:prime-table --quantity=10```
+```php bin/console app:prime-table --quantity=10```
 
 Possible argument:
 
@@ -46,7 +46,7 @@ Possible argument:
 
  example:
   To get 10 prime numbers starting from 20 use
-  ```php bin/console funding:prime-table --quantity=10 20```
+  ```php bin/console app:prime-table --quantity=10 20```
 
 
 Possible options:
@@ -58,7 +58,7 @@ Possible options:
 
 example:
   To get numbers ending with 40 use
-  ```php bin/console funding:prime-table --last=40```
+  ```php bin/console app:prime-table --last=40```
 
 Please use '--help' for more informations.
 
@@ -91,7 +91,7 @@ make phpcs
 # Results - table #
 
 ```
-php bin/console funding:prime-table --quantity=10
+php bin/console app:prime-table --quantity=10
 ```
 
 ```
@@ -116,7 +116,7 @@ php bin/console funding:prime-table --quantity=10
 # Results - list #
 
 ```
-php bin/console funding:prime-table --quantity=3
+php bin/console app:prime-table --quantity=3
 ```
 
 ```

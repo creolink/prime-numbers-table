@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Exception;
+namespace AppBundle\Exception;
 
 class NoPresenterException extends \Exception
 {

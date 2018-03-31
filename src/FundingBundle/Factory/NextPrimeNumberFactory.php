@@ -1,11 +1,11 @@
 <?php
 
-namespace FundingBundle\Factory;
+namespace AppBundle\Factory;
 
-use FundingBundle\Service\NextPrimeNumberService;
-use FundingBundle\Service\NativeNextPrimeNumberService;
-use FundingBundle\Service\AbstractNextPrimeNumberService;
-use FundingBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
+use AppBundle\Service\NextPrimeNumberService;
+use AppBundle\Service\NativeNextPrimeNumberService;
+use AppBundle\Service\AbstractNextPrimeNumberService;
+use AppBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
 
 class NextPrimeNumberFactory
 {

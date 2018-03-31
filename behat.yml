@@ -18,7 +18,7 @@ default:
 
             contexts:
                 - Knp\FriendlyContexts\Context\MinkContext
-                - FundingBundle\Test\Behat\PrimeTableContext
+                - AppBundle\Test\Behat\PrimeTableContext
 
             extensions:
                 Behatch\Extension: ~

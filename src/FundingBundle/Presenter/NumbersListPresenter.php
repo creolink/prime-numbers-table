@@ -1,10 +1,10 @@
 <?php
 
-namespace FundingBundle\Presenter;
+namespace AppBundle\Presenter;
 
-use FundingBundle\Presenter\NumbersPresenterInterface;
+use AppBundle\Presenter\NumbersPresenterInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use FundingBundle\Presenter\AbstractNumbersPresenter;
+use AppBundle\Presenter\AbstractNumbersPresenter;
 
 class NumbersListPresenter extends AbstractNumbersPresenter implements NumbersPresenterInterface
 {

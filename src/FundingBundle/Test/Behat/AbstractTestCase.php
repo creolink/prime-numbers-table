@@ -1,17 +1,17 @@
 <?php
 
-namespace FundingBundle\Test\Behat;
+namespace AppBundle\Test\Behat;
 
-use FundingBundle\Test\TestCaseTrait;
+use AppBundle\Test\TestCaseTrait;
 use Behatch\Context\BaseContext;
-use FundingBundle\Factory\PrimeNumbersServiceFactory;
-use FundingBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
-use FundingBundle\Service\QuantityPrimeNumbersService as QuantityNumbersService;
-use FundingBundle\Service\LastPrimeNumbersService as LastNumbersService;
-use FundingBundle\Entity\CommandOptionsInterface;
-use FundingBundle\Presenter\NumbersPresenterInterface;
-use FundingBundle\Presenter\NumbersTablePresenter;
-use FundingBundle\Calculator\Multiplication;
+use AppBundle\Factory\PrimeNumbersServiceFactory;
+use AppBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
+use AppBundle\Service\QuantityPrimeNumbersService as QuantityNumbersService;
+use AppBundle\Service\LastPrimeNumbersService as LastNumbersService;
+use AppBundle\Entity\CommandOptionsInterface;
+use AppBundle\Presenter\NumbersPresenterInterface;
+use AppBundle\Presenter\NumbersTablePresenter;
+use AppBundle\Calculator\Multiplication;
 
 abstract class AbstractTestCase extends BaseContext
 {

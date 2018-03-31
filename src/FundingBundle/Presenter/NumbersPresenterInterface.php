@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Presenter;
+namespace AppBundle\Presenter;
 
 use Symfony\Component\Console\Output\OutputInterface;
 

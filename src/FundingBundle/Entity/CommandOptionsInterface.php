@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\Entity;
+namespace AppBundle\Entity;
 
 interface CommandOptionsInterface
 {

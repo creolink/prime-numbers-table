@@ -1,9 +1,9 @@
 <?php
 
-namespace FundingBundle\Service;
+namespace AppBundle\Service;
 
-use FundingBundle\Service\AbstractNextPrimeNumberService;
-use FundingBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
+use AppBundle\Service\AbstractNextPrimeNumberService;
+use AppBundle\Service\PrimeNumberValidationService as PrimeNumberValidation;
 
 class NextPrimeNumberService extends AbstractNextPrimeNumberService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Entity;
+namespace AppBundle\Entity;
 
-use FundingBundle\Entity\CommandOptionsInterface;
+use AppBundle\Entity\CommandOptionsInterface;
 
 class PMCommandOption implements CommandOptionsInterface
 {

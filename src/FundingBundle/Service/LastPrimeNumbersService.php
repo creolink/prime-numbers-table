@@ -1,8 +1,8 @@
 <?php
 
-namespace FundingBundle\Service;
+namespace AppBundle\Service;
 
-use FundingBundle\Service\AbstractPrimeNumbersService;
+use AppBundle\Service\AbstractPrimeNumbersService;
 
 class LastPrimeNumbersService extends AbstractPrimeNumbersService
 {

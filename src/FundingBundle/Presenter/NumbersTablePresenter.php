@@ -1,12 +1,12 @@
 <?php
 
-namespace FundingBundle\Presenter;
+namespace AppBundle\Presenter;
 
-use FundingBundle\Presenter\NumbersPresenterInterface;
+use AppBundle\Presenter\NumbersPresenterInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Helper\TableStyle;
-use FundingBundle\Presenter\AbstractNumbersPresenter;
+use AppBundle\Presenter\AbstractNumbersPresenter;
 
 class NumbersTablePresenter extends AbstractNumbersPresenter implements NumbersPresenterInterface
 {

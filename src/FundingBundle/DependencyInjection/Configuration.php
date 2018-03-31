@@ -1,6 +1,6 @@
 <?php
 
-namespace FundingBundle\DependencyInjection;
+namespace AppBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -13,7 +13,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('funding');
+        $rootNode = $treeBuilder->root('app');
         $rootNode
             ->children()
                 ->scalarNode('prime_numbers_presenter')->isRequired()->end()

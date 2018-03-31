@@ -1,18 +1,18 @@
 <?php
 
-namespace FundingBundle\Command;
+namespace AppBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use FundingBundle\Command\PrimeTableCommandInterface;
-use FundingBundle\Entity\PMCommandOption;
-use FundingBundle\Entity\CommandOptionsInterface;
-use FundingBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
-use FundingBundle\Factory\PrimeNumbersServiceFactory;
-use FundingBundle\Presenter\NumbersPresenterInterface;
+use AppBundle\Command\PrimeTableCommandInterface;
+use AppBundle\Entity\PMCommandOption;
+use AppBundle\Entity\CommandOptionsInterface;
+use AppBundle\Service\AbstractPrimeNumbersService as PrimeNumbersService;
+use AppBundle\Factory\PrimeNumbersServiceFactory;
+use AppBundle\Presenter\NumbersPresenterInterface;
 
 class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTableCommandInterface
 {
@@ -169,7 +169,7 @@ class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTab
      */
     private function getPrimeNumbersServiceFactory(): PrimeNumbersServiceFactory
     {
-        return $this->getContainer()->get('funding.prime_numbers_service.factory');
+        return $this->getContainer()->get('app.prime_numbers_service.factory');
     }
 
     /**
@@ -177,6 +177,6 @@ class DisplayPrimeTableCommand extends ContainerAwareCommand implements PrimeTab
      */
     private function getPrimeNumbersPresenter(): NumbersPresenterInterface
     {
-        return $this->getContainer()->get('funding.prime_numbers.presenter');
+        return $this->getContainer()->get('app.prime_numbers.presenter');
     }
 }
